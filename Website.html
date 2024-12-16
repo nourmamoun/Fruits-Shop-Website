@@ -1,0 +1,529 @@
+<html>
+    <head>
+<style>
+    body{
+        background-color:whitesmoke;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    li{
+        list-style: none;
+        display: inline-block;
+        margin: 10px;
+        padding:  10px;
+        font-size: 17;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: 80px;
+
+        
+
+        
+    }
+    
+    li:first-child{
+        padding-right: 700px;
+        padding-left: 150px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-weight: bold;
+        font-size: 50;
+        padding-left: 100px;
+        word-spacing: 1;
+        margin: 0;
+    }
+    .text p{
+        padding-left: 100px;
+        word-spacing: 1;
+    }
+    
+    .home{
+        display: flex;
+        padding-left: 100px;
+        margin-bottom: 250px;
+    }
+    .text{
+        
+        width: 50%;
+        margin-top: 50px;
+        font-size: 18px;
+        margin-right: 50px;
+        
+    }
+    .homeButtons{
+        padding: 10;
+        word-spacing: 1;
+        width: 150px;
+        height: 50;
+        
+        
+    }
+    .homeImage{
+        width: 50%;
+        flex-wrap: wrap;
+        
+        
+    }
+    #but1{
+        margin-top: 50px;
+        margin-left: 100px;
+        color: white;
+        background-color: orange;
+        border: 0;
+    }
+    #but1:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid black;
+
+    }
+    #but2{
+        color: white;
+        background-color: black;
+        
+    }
+    #but2:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+    .services{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 0px;
+        
+    }
+
+    .catColors{
+        color:orange;
+    }
+    .categories{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        
+    }
+    .servTxt h4{
+        font-size: 30;
+        font-weight: bolder;
+
+    }
+
+    
+
+    .cat{
+        font-size: 20px;
+        width: 25%;
+        flex-wrap: wrap;
+        margin: auto;
+        border: 1px solid lightgray;
+        padding: 30px;
+        border-radius: 3%;
+    }
+    #ServRead{
+        background-color: black;
+        color: white;
+        padding: 15px 40px;
+    }
+
+    #servRead:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .cat:hover{
+        border-top: 10px solid orangered;
+        cursor: pointer;
+    }
+
+    .fruitFresh{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 0px;
+        
+    }
+    .fruitTxt h4{
+        font-size: 30;
+        font-weight: bolder;
+        padding-bottom: 0;
+    }
+
+    .FruitsCat{
+        display: flex;
+        margin-bottom: 60px;
+        margin-top: 80px;
+    }
+    .fruitsTxt h4{
+        font-size: 25;
+        font-weight: 600;
+    }
+
+    .fruitsTxt{
+        padding-left: 100px;
+        font-size: 15;
+        text-align: left;
+        width: 75%;
+
+    }
+    .fruitsImg{
+        width: 25%;
+        flex-wrap: wrap;
+        padding-right: 20px;
+    }
+
+    .fruitBtton{
+        
+        background-color: black;
+        color: white;
+        padding: 15px 40px;
+        margin-top: 30px;
+
+    }
+    .fruitBtton:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+    .imgFruits{
+        text-align: center;
+        position: relative;
+    }
+
+    .imgFruits img{
+       width: 100%;
+       height: 70%;
+       display: block;
+
+    }
+    .text-overLay{
+        position: absolute;
+        top:40%;
+        bottom: 50%;
+        font-size: 100px;
+        left: 28%;
+        color: white;
+        font-weight: bold;
+    }
+    .testimonial{
+        text-align: center;
+        margin-bottom: 130px;
+       
+    }
+    .testTxt{
+        font-size: 15px;
+        padding: 50px 180px;
+        
+    }
+
+    .testTxt h4{
+        font-size: 30;
+        font-weight: 600;
+    }
+
+    .contact_us{
+        display: flex;
+        padding-left: 100px;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+
+    .contactTxt{
+        width: 98%;
+        font-size: 20px;
+        
+
+
+    }
+
+    .contactTxt h4{
+        font-size: 30;
+        font-weight: bold;
+    }
+
+    .formimg{
+        width: 2%;
+    }
+    .inputs input {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 0;
+        border-bottom: 2px solid grey;
+        border-radius: 4px;
+        font-size: 14px;
+        color: gray;
+        
+    }
+
+    .formButt{
+        background-color: orange;
+       border: 0;
+        padding: 10px 30px;
+        color: white;
+    }
+
+    .formButt:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .lastList{
+        
+        margin-bottom: 70px;
+        padding-left: 100px;
+        display: flex;
+        
+    }
+    .catList h5{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .catList{
+        width: 25%;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    .subscribeNow{
+        background-color: orange;
+        border: 0;
+         padding: 10px 30px;
+         color: white;
+         border-radius: 5px;
+    }
+
+    .subscribeNow:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .catList input{
+        width: 200px;
+        height: 25px;
+        margin-bottom: 15px;
+    }
+
+    a {
+        text-decoration: none; /* Removes the underline */
+        color: black; /* Optional: change the link color */
+    }
+   
+    
+    a:hover{
+        color: orange;
+    }
+    #mainPage a:hover{
+        color: black;
+    }
+
+
+
+    
+    
+
+    
+
+   
+    
+</style>
+
+    </head>
+    <body >
+        <ul>
+            <li id="mainPage"><a href="#home1"><img src="images/logo.png" width="30" height="30"> Fruits Shop</a></li>
+            <li><a href="#home1">Home</a></li>
+            <li><a href="#service1">Services</a></li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
+            <li><a href="#contact-us"><img src="images/search.png" alt="" width="20px" height="20px"></a></li>
+
+        </ul>
+    
+        <div class="home" id="home1">
+            <div class="text">
+                <h1>Welcome to</h1><br>
+                <h1>Our fruit shop</h1>
+                <p>There are many wariations of passages of Lorem ipsum, dolor sit amet 
+                    consectetur adipisicing elit. Quia repudiandae recusandae placeat voluptatum 
+                    accusantium explicabo alias nobis ea id quis. Quasi tempora fugiat nemo? Ex 
+                    impedit amet assumenda eum sint! 
+                </p>
+
+                <button class="homeButtons" id="but1">Shop Now</button>
+                <button class="homeButtons" id="but2" >Contact us</button>
+            </div>
+                <div id="homeImage"><img src="images/dish.png" alt=""></div>
+            </div>
+
+        <div class="services" id="service1">  
+            <div class="servTxt">
+                <h4>Our Services</h4>
+                <p>there are many variations of passages of lorem ipsum available, but the majority have</p>
+            </div>
+            <div class="categories">
+                <div class="cat">
+                    <img src="images/item1.png" alt="">
+                    <h5 class="catColors">Orange</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, quam a autem assumenda aspernatur iusto suscipit magnam delectus vero ea quo blanditiis vel odio voluptates ullam saepe fugiat architecto?</p>
+
+                </div> 
+                <div class="cat">
+                    <img src="images/item2.png" alt="">
+                    <h5 class="catColors">Grapes</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, quam a autem assumenda aspernatur iusto suscipit magnam delectus vero ea quo blanditiis vel odio voluptates ullam saepe fugiat architecto?</p>
+
+                </div> 
+                <div class="cat">
+                    <img src="images/item.png" alt="">
+                    <h5 class="catColors">Guava</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, quam a autem assumenda aspernatur iusto suscipit magnam delectus vero ea quo blanditiis vel odio voluptates ullam saepe fugiat architecto?</p>
+
+                </div> 
+
+            </div>  
+
+            <button  id="ServRead">Read More</button>
+
+
+        </div>
+
+        <div class="fruitFresh" id="fruits">
+            <div class = "fruitTxt">
+            <h4>Fresh Fruits</h4>
+            <p>These are many variations of passages of loream ipsum avalaible, but the majority have</p>
+            </div>
+            <div class="FruitsCat">
+                <div class="fruitsTxt">
+                    <h4>Best Fresh Orange</h4>
+                <p>but the majority have suffered attention in some form, by injected humor,or randomised words which don't look even slightly believable. if you are going to use a passage of loream ipsum, you need to be.</p>
+                <button class="fruitBtton">Buy Now</button>
+                </div>
+                
+                <div class="fruitsImg"><img src="images/orange.png" height="200" width="200" alt=""></div>
+            </div>
+
+            <div class="FruitsCat">
+                <div class="fruitsTxt">
+                    <h4>Best Fresh Grapes</h4>
+                <p>but the majority have suffered attention in some form, by injected humor,or randomised words which don't look even slightly believable. if you are going to use a passage of loream ipsum, you need to be.</p>
+                <button class="fruitBtton">Buy Now</button>
+                </div>
+                
+                <div class="fruitsImg"><img src="images/grapes.png" height="200" width="200" alt=""></div>
+            </div>
+
+            <div class="FruitsCat">
+                <div class="fruitsTxt">
+                    <h4>Best Fresh Guava</h4>
+                <p>but the majority have suffered attention in some form, by injected humor,or randomised words which don't look even slightly believable. if you are going to use a passage of loream ipsum, you need to be.</p>
+                <button class="fruitBtton">Buy Now</button>
+                </div>
+                
+                <div class="fruitsImg"><img src="images/gauva.png" height="200" width="200"></div>
+            </div>
+        </div>
+        
+        <div class="imgFruits">
+            
+            <img src="images/tasty.png" alt="" >
+            <div class="text-overLay">Very Tasty Fruits</div>
+            
+
+        </div>
+
+        <div class="testimonial">
+            <div class="testTxt">
+                <h4>Testimonial</h4>
+                <p>There are many variations of lorem ipsum avaliable, but the majority have</p>
+
+            </div>
+            <div class="testImg">
+                <img src="images/client.png" alt="">
+            </div>
+            <div class="testTxt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eaque? Hic magni quae libero eveniet excepturi, veritatis est nesciunt, velit deleniti, temporibus porro iure? Ipsa quasi repellat sequi sed nemo 
+                Ipsa quasi repellat sequi sed nemo .Ipsa quasi repellat sequi sed nemo 
+                .</p>
+            </div>
+        </div>
+
+        <div class="contact_us" id="contact-us">
+            <div class="contactTxt">
+                <h4>Contact Us</h4>
+                <form action="get" class="inputs">
+                    <input type="text" value="Name" name="user_name"><br>
+                    <input type="text" value="Phone Number" name="phone_number"><br>
+                    <input type="text" value="Email" name="E-mail"><br><br><br>
+                    <input type="text" value="Message" name="Message" id="input_message">
+                </form>
+
+                <button class="formButt">Send</button>
+            </div>
+                <div class="formimag"><img src="images/orange-dish.png" alt=""></div>
+
+            
+        </div>
+
+        <div class="lastList">
+            <div class="catList">
+                <h5>Fruits</h5>
+                <p>Lorem ipsum dolor sit amet consectetur </p> 
+                <p>adipisicing elit. Saepe, quae? Nam quis</p>
+                <p>libero temporibus aliquid voluptatibus ipsam</p>  
+                <p>quibusdam commodi voluptas totam fugiat. </p>
+                <p>Architecto consectetur ab ullam reiciendis,</p>
+            
+            </div>
+
+            <div class="catList">
+                <h5>Services</h5>
+                <p>Lorem ipsum dolor sit amet consectetur </p> 
+                <p>adipisicing elit. Saepe, quae? Nam quis</p>
+                <p>libero temporibus aliquid voluptatibus ipsam</p>  
+                <p>quibusdam commodi voluptas totam fugiat. </p>
+                <p>Architecto consectetur ab ullam reiciendis,</p>
+            
+            </div>
+
+            <div class="catList">
+                <h5>List</h5>
+                <p>Lorem ipsum dolor sit amet consectetur </p> 
+                <p>adipisicing elit. Saepe, quae? Nam quis</p>
+                <p>libero temporibus aliquid voluptatibus ipsam</p>  
+                <p>quibusdam commodi voluptas totam fugiat. </p>
+                <p>Architecto consectetur ab ullam reiciendis,</p>
+            
+            </div>
+
+            <div class="catList">
+                <h5>Follow Us</h5>
+                <a href="http://www.facebook.com"><img src="images/fb.png" alt="" height="30px" width="30px"></a>
+                <a href="http://www.instagram.com"><img src="images/instagram.png" alt=""  height="30px" width="30px"></a>
+                 <a href="http://www.twitter.com"><img src="images/twitter.png" alt=""  height="30px" width="30px"></a>
+                <a href="http://www.linkedin.com"><img src="images/linkedin.png" alt=""  height="30px" width="30px"></a><br><br>
+            
+                <label for="" id="labelSubscribe">Subscribe Now</label><br><br>
+                <input type="text" id="subscribeInput"><br>
+
+                <button class="subscribeNow">Subscribe</button>
+
+            </div>
+
+        </div>
+       
+    </body>
+</html>
