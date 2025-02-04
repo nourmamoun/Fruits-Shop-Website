@@ -1,357 +1,21 @@
 <html>
     <head>
-<style>
-    body{
-        background-color:whitesmoke;
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    li{
-        list-style: none;
-        display: inline-block;
-        margin: 10px;
-        padding:  10px;
-        font-size: 17;
-        font-weight: 300;
-        letter-spacing: 2px;
-        margin-bottom: 80px;
-
-        
-
-        
-    }
-    
-    li:first-child{
-        padding-right: 700px;
-        padding-left: 150px;
-        font-weight: bold;
-    }
-
-    h1{
-        font-weight: bold;
-        font-size: 50;
-        padding-left: 100px;
-        word-spacing: 1;
-        margin: 0;
-    }
-    .text p{
-        padding-left: 100px;
-        word-spacing: 1;
-    }
-    
-    .home{
-        display: flex;
-        padding-left: 100px;
-        margin-bottom: 250px;
-    }
-    .text{
-        
-        width: 50%;
-        margin-top: 50px;
-        font-size: 18px;
-        margin-right: 50px;
-        
-    }
-    .homeButtons{
-        padding: 10;
-        word-spacing: 1;
-        width: 150px;
-        height: 50;
-        
-        
-    }
-    .homeImage{
-        width: 50%;
-        flex-wrap: wrap;
-        
-        
-    }
-    #but1{
-        margin-top: 50px;
-        margin-left: 100px;
-        color: white;
-        background-color: orange;
-        border: 0;
-    }
-    #but1:hover{
-        color: black;
-        background-color: white;
-        cursor: pointer;
-        border: 1px solid black;
-
-    }
-    #but2{
-        color: white;
-        background-color: black;
-        
-    }
-    #but2:hover{
-        color: black;
-        background-color: white;
-        cursor: pointer;
-        border: 1px solid black;
-    }
-
-    .services{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        text-align: center;
-        background-color: white;
-        margin-bottom: 0px;
-        
-    }
-
-    .catColors{
-        color:orange;
-    }
-    .categories{
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        
-    }
-    .servTxt h4{
-        font-size: 30;
-        font-weight: bolder;
-
-    }
-
-    
-
-    .cat{
-        font-size: 20px;
-        width: 25%;
-        flex-wrap: wrap;
-        margin: auto;
-        border: 1px solid lightgray;
-        padding: 30px;
-        border-radius: 3%;
-    }
-    #ServRead{
-        background-color: black;
-        color: white;
-        padding: 15px 40px;
-    }
-
-    #servRead:hover{
-        color: black;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    .cat:hover{
-        border-top: 10px solid orangered;
-        cursor: pointer;
-    }
-
-    .fruitFresh{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        text-align: center;
-        background-color: white;
-        margin-bottom: 0px;
-        
-    }
-    .fruitTxt h4{
-        font-size: 30;
-        font-weight: bolder;
-        padding-bottom: 0;
-    }
-
-    .FruitsCat{
-        display: flex;
-        margin-bottom: 60px;
-        margin-top: 80px;
-    }
-    .fruitsTxt h4{
-        font-size: 25;
-        font-weight: 600;
-    }
-
-    .fruitsTxt{
-        padding-left: 100px;
-        font-size: 15;
-        text-align: left;
-        width: 75%;
-
-    }
-    .fruitsImg{
-        width: 25%;
-        flex-wrap: wrap;
-        padding-right: 20px;
-    }
-
-    .fruitBtton{
-        
-        background-color: black;
-        color: white;
-        padding: 15px 40px;
-        margin-top: 30px;
-
-    }
-    .fruitBtton:hover{
-        color: black;
-        background-color: white;
-        cursor: pointer;
-    }
-    .imgFruits{
-        text-align: center;
-        position: relative;
-    }
-
-    .imgFruits img{
-       width: 100%;
-       height: 70%;
-       display: block;
-
-    }
-    .text-overLay{
-        position: absolute;
-        top:40%;
-        bottom: 50%;
-        font-size: 100px;
-        left: 28%;
-        color: white;
-        font-weight: bold;
-    }
-    .testimonial{
-        text-align: center;
-        margin-bottom: 130px;
-       
-    }
-    .testTxt{
-        font-size: 15px;
-        padding: 50px 180px;
-        
-    }
-
-    .testTxt h4{
-        font-size: 30;
-        font-weight: 600;
-    }
-
-    .contact_us{
-        display: flex;
-        padding-left: 100px;
-        background-color: white;
-        margin-bottom: 50px;
-    }
-
-    .contactTxt{
-        width: 98%;
-        font-size: 20px;
-        
-
-
-    }
-
-    .contactTxt h4{
-        font-size: 30;
-        font-weight: bold;
-    }
-
-    .formimg{
-        width: 2%;
-    }
-    .inputs input {
-        width: 50%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 0;
-        border-bottom: 2px solid grey;
-        border-radius: 4px;
-        font-size: 14px;
-        color: gray;
-        
-    }
-
-    .formButt{
-        background-color: orange;
-       border: 0;
-        padding: 10px 30px;
-        color: white;
-    }
-
-    .formButt:hover{
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-        cursor: pointer;
-    }
-
-    .lastList{
-        
-        margin-bottom: 70px;
-        padding-left: 100px;
-        display: flex;
-        
-    }
-    .catList h5{
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .catList{
-        width: 25%;
-        flex-wrap: wrap;
-        font-size: 13px;
-    }
-
-    .subscribeNow{
-        background-color: orange;
-        border: 0;
-         padding: 10px 30px;
-         color: white;
-         border-radius: 5px;
-    }
-
-    .subscribeNow:hover{
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-        cursor: pointer;
-    }
-    .catList input{
-        width: 200px;
-        height: 25px;
-        margin-bottom: 15px;
-    }
-
-    a {
-        text-decoration: none; /* Removes the underline */
-        color: black; /* Optional: change the link color */
-    }
-   
-    
-    a:hover{
-        color: orange;
-    }
-    #mainPage a:hover{
-        color: black;
-    }
-
-
-
-    
-    
-
-    
-
-   
-    
-</style>
+    <link rel="stylesheet" href="design.css">
 
     </head>
     <body >
-        <ul>
-            <li id="mainPage"><a href="#home1"><img src="images/logo.png" width="30" height="30"> Fruits Shop</a></li>
-            <li><a href="#home1">Home</a></li>
-            <li><a href="#service1">Services</a></li>
-            <li><a href="#fruits">Fruits</a></li>
-            <li><a href="#contact-us">Contact us</a></li>
-            <li><a href="#contact-us"><img src="images/search.png" alt="" width="20px" height="20px"></a></li>
-
-        </ul>
+        <div id="navbar-design">
+            <ul >
+                <li id="mainPage"><a href="#home1"><img src="images/logo.png" width="30" height="30"> Fruits Shop</a></li>
+                <li><a href="#home1">Home</a></li>
+                <li><a href="#service1">Services</a></li>
+                <li><a href="#fruits">Fruits</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#contact-us"><img src="images/search.png" alt="" width="20px" height="20px"></a></li>
+    
+            </ul>
+        </div>
+        
     
         <div class="home" id="home1">
             <div class="text">
@@ -393,11 +57,16 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt, quam a autem assumenda aspernatur iusto suscipit magnam delectus vero ea quo blanditiis vel odio voluptates ullam saepe fugiat architecto?</p>
 
                 </div> 
+                
 
             </div>  
 
             <button  id="ServRead">Read More</button>
+            <br>
+            <br>
+            <br>
 
+            <hr id="divider">
 
         </div>
 
@@ -415,7 +84,7 @@
                 
                 <div class="fruitsImg"><img src="images/orange.png" height="200" width="200" alt=""></div>
             </div>
-
+            <hr class="horizentalFruitDivider">
             <div class="FruitsCat">
                 <div class="fruitsTxt">
                     <h4>Best Fresh Grapes</h4>
@@ -425,7 +94,7 @@
                 
                 <div class="fruitsImg"><img src="images/grapes.png" height="200" width="200" alt=""></div>
             </div>
-
+            <hr class="horizentalFruitDivider">
             <div class="FruitsCat">
                 <div class="fruitsTxt">
                     <h4>Best Fresh Guava</h4>
