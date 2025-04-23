@@ -4,7 +4,6 @@ A colorful and responsive website for a fictional fruit shop, built using pure H
 
 ## 🌟 Features
 
-- Responsive design
 - Fresh and fruity UI
 - Organized layout with header, product section, and footer
 - Hover effects and custom buttons
