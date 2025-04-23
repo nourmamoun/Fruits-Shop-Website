@@ -11,11 +11,9 @@ A colorful and responsive website for a fictional fruit shop, built using pure H
 
 ## 🖼️ Demo Screenshot
 
-![Fruit Shop Website Screenshot](images/1.png)
-![Fruit Shop Website Screenshot](images/2.png)
-![Fruit Shop Website Screenshot](images/3.png)
-
-> Make sure you have the screenshot saved at `images/screenshot.png` or change the path accordingly.
+![1](https://github.com/user-attachments/assets/08807936-cb9a-4773-b08a-0b6dd10f0e01)
+![2](https://github.com/user-attachments/assets/1a3133f7-9298-4eac-bff3-fb9cd7af2050)
+![3](https://github.com/user-attachments/assets/a8f15637-49aa-4ca5-abc0-91f5b3452abd)
 
 ## 🚀 How to View
 
